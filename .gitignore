@@ -1,0 +1,5 @@
+node_modules
+build
+.env
+notion.ics
+notion.ics.old
