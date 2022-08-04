@@ -3,7 +3,7 @@ import generateIcs from "../src/generateIcs";
 import rateLimiter from "lambda-rate-limiter";
 
 const limit = rateLimiter({
-    interval: 1000,
+    interval: 3000,
 }).check;
 
 export default async (request: VercelRequest, response: VercelResponse) => {
