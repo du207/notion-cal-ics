@@ -11,13 +11,4 @@ DATABASE_ID=(캘린더 데이터베이스 ID)
 
 를 입력하고
 
-```shell
-yarn build // 빌드
-yarn start // 실행
-```
-
-로 실행합니다.
-
-systemd 서비스 형태로 만들어 주기적으로 실행할 수도 있습니다.
-
-참고: ICS 파일과 Notion 데이터베이스를 양방향 동기화하는 것이 아닌 Notion에서 ICS 파일로 **단방향** 동기화입니다
+Vercel에 디플로이하여 https://(vercel url)/api/notion.ics에 접속하여 ICS 파일을 가져올 수 있습니다.
