@@ -15,5 +15,5 @@ export default async (request: VercelRequest, response: VercelResponse) => {
 
     const ics = await generateIcs();
 
-    response.setHeader("content-type", "text/plain").send(ics);
+    response.setHeader("content-type", "text/calendar").send(ics);
 };
