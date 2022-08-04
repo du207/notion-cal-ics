@@ -3,14 +3,14 @@ import generateIcs from "../src/generateIcs";
 import rateLimiter from "lambda-rate-limiter";
 
 const limit = rateLimiter({
-    interval: 10000,
+    interval: 1000,
 }).check;
 
 export default async (request: VercelRequest, response: VercelResponse) => {
     try {
         await limit(1, request.headers["x-real-ip"] as string);
     } catch (err) {
-        return response.send(429);
+        return response.status(429);
     }
 
     const ics = await generateIcs();
