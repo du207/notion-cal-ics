@@ -1,17 +1,17 @@
 {
     "name": "notion-cal-ics",
     "version": "1.0.0",
-    "main": "src/index.ts",
     "license": "MIT",
     "dependencies": {
-        "@types/node-notifier": "^8.0.2",
+        "@types/lambda-rate-limiter": "^3.0.0",
+        "@vercel/node": "^2.5.3",
         "dotenv": "^16.0.1",
         "ics": "^2.37.0",
-        "node-notifier": "^10.0.1",
+        "lambda-rate-limiter": "^3.0.1",
         "notion-cal-lib": "0.2.0"
     },
     "scripts": {
-        "dev": "ts-node .",
+        "ts-node": "ts-node .",
         "build": "tsc",
         "start": "node ./build"
     },
