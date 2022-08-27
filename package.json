@@ -11,7 +11,7 @@
         "notion-cal-lib": "0.2.0"
     },
     "scripts": {
-        "ts-node": "ts-node .",
+        "vercel-dev": "vercel dev",
         "build": "tsc",
         "start": "node ./build"
     },

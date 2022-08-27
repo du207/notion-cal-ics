@@ -28,10 +28,17 @@ const readNotionCal = async function (token, database_id) {
         const dates = await getProperties("날짜");
 
         return titles.reduce(
-            (prev, curr, i) => [
-                ...prev,
-                { id: ids[i], title: curr.results[0].title.plain_text, date: dates[i].date },
-            ],
+            (prev, curr, i) =>
+                curr.results[0]?.title && dates[i].date
+                    ? [
+                          ...prev,
+                          {
+                              id: ids[i],
+                              title: curr.results[0]?.title ? curr.results[0].title.plain_text : "",
+                              date: dates[i].date,
+                          },
+                      ]
+                    : prev,
             []
         );
     } catch (err) {
