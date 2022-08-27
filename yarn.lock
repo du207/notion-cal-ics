@@ -601,10 +601,10 @@ node-fetch@2.6.7, node-fetch@^2.6.1:
   dependencies:
     whatwg-url "^5.0.0"
 
-notion-cal-lib@0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/notion-cal-lib/-/notion-cal-lib-0.2.0.tgz#5b0c0570e2ef02e1a353b86d8e572375ce1756a6"
-  integrity sha512-7ICh8iKPQIdlqnBZKX9HYPkHLlSa/CgoYjTIr/SwcLMoxsjVxuTyh5u9y+9MIKqB+E1sXgvQVwu5+3Wc6C6FLA==
+notion-cal-lib@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/notion-cal-lib/-/notion-cal-lib-0.3.0.tgz#b364308eb1fde3a13d7c0daae919249d238adcab"
+  integrity sha512-+Nyn0R9zJbsN+KqTyis5CyWBhG2ghk6w52c+gudIpgmodkZ4QeSvBWWTb3vxqsQyMreO8DjEMsqEA4PXXNh69Q==
   dependencies:
     "@notionhq/client" "^2.1.1"
 

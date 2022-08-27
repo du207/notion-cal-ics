@@ -8,7 +8,7 @@
         "dotenv": "^16.0.1",
         "ics": "^2.37.0",
         "lambda-rate-limiter": "^3.0.1",
-        "notion-cal-lib": "0.2.0"
+        "notion-cal-lib": "^0.3.0"
     },
     "scripts": {
         "vercel-dev": "vercel dev",
